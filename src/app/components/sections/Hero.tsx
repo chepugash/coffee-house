@@ -1,3 +1,5 @@
+"use client";
+
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 
@@ -7,7 +9,7 @@ export default function Hero() {
       {/* Background image with overlay */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/hero-bg.jpg"
+          src="/images/hero-bg.jpg"
           alt="Coffee shop atmosphere"
           fill
           className="object-cover brightness-50"
