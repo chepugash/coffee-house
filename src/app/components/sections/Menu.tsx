@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 type MenuItem = {
   id: number;
@@ -123,10 +124,11 @@ export default function Menu() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
               <div className="relative h-48">
-                <img
+                <Image
                   src={item.image}
                   alt={item.name}
-                  className="w-full h-full object-cover"
+                  fill
+                  className="object-cover"
                 />
               </div>
               <div className="p-6">
